@@ -1,0 +1,136 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+----------
+
+info about the app how I entered data inside python from terminal
+
+>>> from flask_gym import db,app,bcrypt
+>>> from flask_gym.models import trainer 
+>>> with app.app_context():
+...     trainers=[ Trainer(username="Ahmed Hassan",
+...     email="ahmed@gym.com",
+...     password=bcrypt.generate_password_hash('trainer123').\
+decode('utf-8'),
+...     specialization="Weight Lifting",
+...     members_belongs=0,
+...     status="not_in_gym"),
+...     Trainer(
+...      >>> with app.app_context():
+...     trainers=[ Trainer(username="Ahmed Hassan",
+...     email="ahmed@gym.com",
+...     password=bcrypt.generate_password_hash('trainer123').\
+decode('utf-8'),
+...     specialization="Weight Lifting",
+...     members_belongs=0,
+...     status="not_in_gym"),
+...     Trainer(
+...             username="Mohamed Ali",
+...             email="mohamed@gym.com",
+...             password=bcrypt.generate_password_hash("train\
+er123").decode('utf-8'),
+...             specialization="Cardio & Fitness",
+...             members_belongs=0,
+...             status="not_in_gym"
+...         ),
+...         Trainer(
+...             username="Omar Khaled",
+...             email="omar@gym.com",
+...             password=bcrypt.generate_password_hash("train\
+er123").decode('utf-8'),
+...             specialization="Bodybuilding",
+...             members_belongs=0,
+...             status="not_in_gym"
+...         ),
+...         Trainer(
+...             username="Youssef Nasser",
+...             email="youssef@gym.com",
+...             password=bcrypt.generate_password_hash("train\
+er123").decode('utf-8'),
+...             specialization="CrossFit",
+...             members_belongs=0,
+...             status="not_in_gym"
+...         ),
+...     ]
+...     db.session.add_all(trainers)
+...     db.session.commit()
+...     print('Trainers added successfully!!')
+...     
+Trainers added successfully!!
+>>> with app.app_context():
+...     for t in Trainer.query.all():
+...         print(t.trainer_id,t.username,t.specialization,t.\
+password)
+...         
+1 Abdulrahman Weight lifting 1234
+2 trainer1 Weight lifting 123
+4 Ahmed Hassan Weight Lifting $2b$12$FXoxLN3oHsm1YBYbvmg7f.doalvGl6nr3JA0rQ5E3MXpcpS9xZHwO
+5 Mohamed Ali Cardio & Fitness $2b$12$kc6WLFg9raNevVrRcO3eVeCy86OMhnSGiM63HAnKlYAZkCNU3MU/W
+6 Omar Khaled Bodybuilding $2b$12$7947h35mBtp1WUiuOaNJjehKTwGT7zIZiv7EBUhZqujNAGzC3Xg/W
+7 Youssef Nasser CrossFit $2b$12$F6uNPISH6QVrA5wol7Jy0OAafvsF36zp5IMN11D.8HQYHA9J5lGWW
+       username="Mohamed Ali",
+...             email="mohamed@gym.com",
+...             password=bcrypt.generate_password_hash("train\
+er123").decode('utf-8'),
+...             specialization="Cardio & Fitness",
+...             members_belongs=0,
+...             status="not_in_gym"
+...         ),
+...         Trainer(
+...             username="Omar Khaled",
+...             email="omar@gym.com",
+...             password=bcrypt.generate_password_hash("train\
+er123").decode('utf-8'),
+...             specialization="Bodybuilding",
+...             members_belongs=0,
+...             status="not_in_gym"
+...         ),
+...         Trainer(
+...             username="Youssef Nasser",
+...             email="youssef@gym.com",
+...             password=bcrypt.generate_password_hash("train\
+er123").decode('utf-8'),
+...             specialization="CrossFit",
+...             members_belongs=0,
+...             status="not_in_gym"
+...         ),
+...     ]
+...     db.session.add_all(trainers)
+...     db.session.commit()
+...     print('Trainers added successfully!!')
+...     
+Trainers added successfully!!
+>>> with app.app_context():
+...     for t in Trainer.query.all():
+...         print(t.trainer_id,t.username,t.specialization,t.\
+password)
+...         
+1 Abdulrahman Weight lifting 1234
+2 trainer1 Weight lifting 123
+4 Ahmed Hassan Weight Lifting $2b$12$FXoxLN3oHsm1YBYbvmg7f.doalvGl6nr3JA0rQ5E3MXpcpS9xZHwO
+5 Mohamed Ali Cardio & Fitness $2b$12$kc6WLFg9raNevVrRcO3eVeCy86OMhnSGiM63HAnKlYAZkCNU3MU/W
+6 Omar Khaled Bodybuilding $2b$12$7947h35mBtp1WUiuOaNJjehKTwGT7zIZiv7EBUhZqujNAGzC3Xg/W
+7 Youssef Nasser CrossFit $2b$12$F6uNPISH6QVrA5wol7Jy0OAafvsF36zp5IMN11D.8HQYHA9J5lGWW
